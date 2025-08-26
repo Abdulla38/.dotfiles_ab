@@ -6,7 +6,7 @@
 WALLPAPER_DIRECTORY=$1
 
 if [ -z "$WALLPAPER_DIRECTORY" ]; then
-    echo "Please, specify the path to the directory with wallapeprs."
+    echo "Please, specify the path to the directory with wallapeprs. You made a pointless argument."
     exit 1
 fi
 
