@@ -14,5 +14,11 @@ if [ -z "$WALLPAPER_DIRECTORY" ]; then
     exit 1
 fi
 
+# Checking that the directory is exist
+if [ ! -d "$WALLPAPER_DIRECTORY" ]; then
+    echo "Error: $WALLPAPER_DIRECTORY is not a directory."
+    exit 1
+fi
+
 echo "$WALLPAPER_DIRECTORY"
 echo $(ls "$WALLPAPER_DIRECTORY")
