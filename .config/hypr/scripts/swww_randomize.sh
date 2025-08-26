@@ -20,5 +20,19 @@ if [ ! -d "$WALLPAPER_DIRECTORY" ]; then
     exit 1
 fi
 
+# Searching for files in the required formats
+found_image=false
+for format in "${IMAGE_FORMATS[@]}"; do
+    if ls -1 "$WALLPAPER_DIRECTORY"/*"$format" 1>/dev/null 2>&1; then
+        found_image=true
+        break
+    fi
+done
+
+if [ "$found_image" = false ]; then
+    echo "No suppourted image files found in $WALLPAPER_DIRECTORY"
+    exit 1
+fi
+
 echo "$WALLPAPER_DIRECTORY"
 echo $(ls "$WALLPAPER_DIRECTORY")
