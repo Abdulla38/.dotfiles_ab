@@ -36,4 +36,7 @@ fi
 
 # Get a random wallpaper
 PICS=($(ls ${WALLPAPER_DIRECTORY}))
-RANDOM_PICS=${PICS[ $RANDOM % ${#PIKS[@]} ]}
+RANDOM_PICS=${PICS[ $RANDOM % ${#PICS[@]} ]}
+
+# Change wallpaper using swww
+swww img ${WALLPAPER_DIRECTORY}/${RANDOM_PICS} --transition-type random --transition-step 128 --transition-duration 3 --transition-angle 30
