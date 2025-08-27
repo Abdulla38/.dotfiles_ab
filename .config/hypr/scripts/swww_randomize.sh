@@ -34,5 +34,6 @@ if [ "$found_image" = false ]; then
     exit 1
 fi
 
-echo "$WALLPAPER_DIRECTORY"
-echo $(ls "$WALLPAPER_DIRECTORY")
+# Get a random wallpaper
+PICS=($(ls ${WALLPAPER_DIRECTORY}))
+RANDOM_PICS=${PICS[ $RANDOM % ${#PIKS[@]} ]}
