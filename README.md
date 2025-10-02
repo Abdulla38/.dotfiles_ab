@@ -1,5 +1,8 @@
-
 # Dotfile's Abdulla.
+
+![Static Badge](https://img.shields.io/badge/tmux-green?style=for-the-badge&logo=python&logoColor=white)
+## Gallery (Will be later)
+
 
 ## About
 
@@ -86,4 +89,3 @@ cd font
 sudo mv *.ttf /usr/local/share/fonts
 ```
 
-### Gallery (Will be later)
