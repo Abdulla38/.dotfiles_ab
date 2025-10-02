@@ -1,0 +1,4 @@
+{
+  "include": ["~/.config/waybar/kanagawa/kanagawa.jsonc"],
+  //"include": ["~/.config/waybar/gruvbox/gruvbox.jsonc"],
+}

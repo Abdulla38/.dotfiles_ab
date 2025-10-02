@@ -1,0 +1,103 @@
+{
+  "layer": "top",
+  "position": "top",
+  "width": 1920,
+  "height": 40,
+  "modules-left": ["custom/weather", "temperature", "backlight", "tray"],
+  "modules-center": ["hyprland/workspaces"],
+  "modules-right": [
+    "pulseaudio",
+    "network",
+    "power-profiles-daemon",
+    "battery",
+    "hyprland/language",
+    "clock",
+  ],
+  "margin-top": 0,
+  "margin-right": 0,
+  "margin-left": 0,
+  "margin-bottom": 0,
+  "spacing": 8,
+
+  "custom/weather": {
+    "format": "󰖞 {}",
+    "interval": 30,
+    "exec": "~/dotfile/waybar/scripts/weather.sh",
+    "tooltip": false,
+  },
+
+  "temperature": {
+    "format": " {temperatureC}°C",
+  },
+
+  "backlight": {
+    "format": "{percent}% {icon}",
+    "format-icons": [" ", " ", " ", " ", " ", " ", " ", " ", " "],
+  },
+
+  "tray": {
+    "icon-size": 16,
+    "spacing": 10,
+  },
+
+  "hyprland/workspaces": {},
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": " ",
+    "format-icons": {
+      "default": [" "],
+    },
+    "on-click": "pavucontrol",
+  },
+
+  "network": {
+    "interface": "wlp0s20f3",
+    "format": "{icon}",
+    "format-disconnected": "󰤭 ",
+    "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
+    "on-click": "kitty -e nmtui",
+    "tooltip": false,
+  },
+
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "format-icons": {
+      "performance": "",
+      "balanced": "",
+      "power-saver": "",
+    },
+  },
+
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-time": "{H} h {M} min",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "format-charging": "󰂄",
+  },
+
+  "hyprland/language": {
+    "format": "{}",
+    "format-en": "EN",
+    "format-ru": "RU",
+  },
+
+  "clock": {
+    "interval": 60,
+    "format": "{:%H:%M}",
+    "timezone": "Asia/Bishkek",
+    "max-length": 25,
+    "tooltip-format": "<span><small>{calendar}</small></span>",
+    "calendar": {
+      "mode": "month",
+      "mode-mon-col": 3,
+      "week-pos": "right",
+      "format": {
+        "months": "<span color='#8ec07c'><b>{}</b></span>",
+        "days": "<span color='#ebdbb2'><b>{}</b></span>",
+        "weekdays": "<span color='#fabd2f'><b>{}</b></span>",
+        "today": "<span color='#fb4934'><b><u>{}</u></b></span>",
+      },
+    },
+  },
+}

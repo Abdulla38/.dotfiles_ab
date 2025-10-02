@@ -1,0 +1,30 @@
+* {
+	font-family: "JetBrainsMono NerdFont";
+	font-size: 16px;
+}
+
+window#waybar {
+	background-color: #1F1F28;
+	border-radius: 8px;
+}
+
+.modules-left{
+	padding: 0px 0px 0px 8px;
+	color: #DCD7BA;
+}
+
+#workspaces {
+	border-radius: 8px;
+	background-color: black
+}
+
+#workspaces button{
+	color: #DCD7BA;
+	font-weight: bold;
+	border-radius: 12px;
+}
+
+.modules-right {
+	padding: 0px 0px 0px 8px;
+	color: #DCD7BA;
+}
