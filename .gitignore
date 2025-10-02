@@ -1,2 +1,5 @@
-tmux/plugins/
-lazy-lock.json
+.config/tmux/plugins/
+.config/nvim/plugged/
+.config/nvim/undo/
+.config/nvim/.netrwhist
+.cache/
