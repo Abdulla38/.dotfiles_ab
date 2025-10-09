@@ -25,5 +25,17 @@ return {
 		vim.lsp.config("*", {
 			capabilities = capabilities,
 		})
+		-- Error display settings
+		vim.diagnostic.config({
+			virtual_text = {
+					prefix = "●",  -- Symbol before error
+					spacing = 2,
+				},
+				float = { border = "rounded" },
+      	signs = true,
+      	underline = true,
+      	update_in_insert = false,
+      	severity_sort = true,
+			})
 	end,
 }
