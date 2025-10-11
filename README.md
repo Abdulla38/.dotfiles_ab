@@ -1,6 +1,6 @@
 # Dotfile's Abdulla.
 
-![Static Badge](https://img.shields.io/badge/tmux-green?style=for-the-badge&logo=python&logoColor=white)
+![Static Badge](https://img.shields.io/badge/tmux-green?style=for-the-badge&logo=tmux&logoColor=white)
 ## Gallery (Will be later)
 
 
