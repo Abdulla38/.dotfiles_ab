@@ -9,3 +9,4 @@ border-radius=16
 border-color=#7e9cd8
 text-color=#dcd7ba
 
+default-timeout=5000
