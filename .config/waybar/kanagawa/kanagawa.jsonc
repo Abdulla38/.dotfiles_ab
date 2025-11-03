@@ -60,6 +60,7 @@
         "interval": 60,
         "format-alt": "{:%a, %d, %b  %H:%M}",
         "timezone": "Asia/Bishkek",   
+        "tooltip-format": "<span><small>{calendar}</small></span>",
         "calendar": {
           "mode": "month",
           "mode-mon-col": 3,
