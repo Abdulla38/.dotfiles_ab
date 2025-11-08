@@ -3,6 +3,7 @@
     "position": "bottom",
     "margin-bottom": 20,
     "width": 1064,
+    "height": 32,
     "modules-left": ["custom/weather", "temperature", "backlight", "tray"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["pulseaudio", "network", "clock", "battery", "hyprland/language"],
