@@ -1,0 +1,12 @@
+(defwindow timer
+           :monitor 0
+           :geometry (geometry :x "514"
+                               :y "454px"
+                               :width "650px"
+                               :height "430px"
+                               :anchor "center")
+           :stacking "bg"
+           :exclusive true
+           :focusable "none"
+           (label :text "TIMER")
+)
